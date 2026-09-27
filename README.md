@@ -32,7 +32,7 @@ Fully containerized with Docker & Docker Compose — runs with a single command.
    cd book_tracker
 ```
 
-2. Create a `.env` file in the root (copy from `.env.example` and fill in your own values):
+2. Create a `.env` file in the root (copy from `.env.example` and fill in your own values)(this is only needed the first time):
 
 ```bash
    cp .env.example .env
