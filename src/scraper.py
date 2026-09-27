@@ -23,7 +23,6 @@ def get_categories(session: requests.Session) -> list[dict]:
         })
     return categories
 
-
 def parse_book_card(article, category_name: str) -> dict | None:
     try:
         title = article.h3.a["title"].strip()
