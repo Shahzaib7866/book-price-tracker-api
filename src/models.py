@@ -11,7 +11,7 @@ class Book(Base):
     rating = Column(String, nullable=False) 
     category = Column(String, nullable=False, index=True)
     availability = Column(String, nullable=False)
-    book_url = Column(String, unique=True, nullable=False)   # duplicate-check ka base
+    book_url = Column(String, unique=True, nullable=False)   
     scraped_at = Column(DateTime(timezone=True), server_default=func.now())
 
 

@@ -25,7 +25,6 @@ def get_categories(session: requests.Session) -> list[dict]:
 
 
 def parse_book_card(article, category_name: str) -> dict | None:
-    """Ek book card (<article>) se data nikalta hai."""
     try:
         title = article.h3.a["title"].strip()
 

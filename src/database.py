@@ -4,7 +4,6 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 
-# Settings class jo .env se DATABASE_URL uthaye gi
 class Settings(BaseSettings):
   DATABASE_URL: str
   DB_USER: str
@@ -18,17 +17,13 @@ class Settings(BaseSettings):
 
 settings = Settings()
 
-# SQLAlchemy Engine create karein
 engine = create_engine(settings.DATABASE_URL)
 
-# SessionLocal session generate karne ke liye
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-# Base class jiske zariye models banenge
 Base = declarative_base()
 
 
-# Dependency function jo har API route mein database session degi
 def get_db():
   db = SessionLocal()
   try:

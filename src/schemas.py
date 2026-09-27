@@ -13,14 +13,13 @@ class BookResponse(BaseModel):
     book_url: str
     scraped_at: datetime
 
-    # Ye zaroori hai: SQLAlchemy model object ko seedha is schema mein convert
-    # karne ki permission deta hai (warna sirf dict se hi kaam karta)
+    
     model_config = ConfigDict(from_attributes=True)
 
 
 class PaginatedBooksResponse(BaseModel):
     """GET /books ka response — sirf books ki list nahi, pagination info bhi."""
-    total: int              # kul kitni books match hui (filter lagne ke baad)
+    total: int              
     page: int
     page_size: int
     books: list[BookResponse]

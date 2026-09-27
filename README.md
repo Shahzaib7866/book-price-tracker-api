@@ -28,8 +28,8 @@ Fully containerized with Docker & Docker Compose — runs with a single command.
 1. Clone the repository:
 
 ```bash
-   git clone <your-repo-url>
-   cd book_tracker
+   git clone https://github.com/Shahzaib7866/book-price-tracker-api.git
+   cd book-price-tracker-api
 ```
 
 2. Create a `.env` file in the root (copy from `.env.example` and fill in your own values)(this is only needed the first time):

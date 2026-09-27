@@ -32,10 +32,9 @@ def get_books(
 ):
     query = db.query(Book)
 
-    # Filters — sirf tab lagenge jab client ne unhe bheja ho
     filters = []
     if category:
-        filters.append(Book.category.ilike(category))  # ilike = case-insensitive match
+        filters.append(Book.category.ilike(category))  
     if min_price is not None:
         filters.append(Book.price >= min_price)
     if max_price is not None:
@@ -44,7 +43,7 @@ def get_books(
     if filters:
         query = query.filter(and_(*filters))
 
-    total = query.count()  # pagination se pehle total count (filtered)
+    total = query.count()  
 
     offset = (page - 1) * page_size
     books = query.offset(offset).limit(page_size).all()
