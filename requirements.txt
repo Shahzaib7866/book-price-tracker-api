@@ -1,4 +1,4 @@
-
+# all required packages for the project are listed below:
 fastapi==0.110.0
 uvicorn==0.28.0
 sqlalchemy==2.0.27
@@ -6,3 +6,6 @@ psycopg2-binary==2.9.9
 beautifulsoup4==4.12.3
 requests==2.31.0
 pydantic-settings==2.1.0
+
+
+
