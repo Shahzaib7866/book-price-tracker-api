@@ -1,5 +1,4 @@
 
-# using Python 3.11 image
 FROM python:3.11-slim
 
 # Working directory
