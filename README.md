@@ -37,7 +37,7 @@ Fully containerized with Docker & Docker Compose, runs with a single command.
    cp .env.example .env
 ```
 
-3. Start the project (app + database) with a single command:
+3. Start the project(app + database) with a single command(Docker Desktop must be running):
 
 ```bash
    docker-compose up --build
