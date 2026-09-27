@@ -49,7 +49,7 @@ Fully containerized with Docker & Docker Compose, runs with a single command.
 
 ## Running the Scraper
 
-** via the API (recommended):**
+via the API:
 
 ```bash
 curl -X POST http://localhost:8000/scrape
