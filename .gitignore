@@ -30,13 +30,6 @@ pip-delete-this-directory.txt
 .DS_Store
 *.log
 
-# Scrapy stuff:
-.scrapy
-
-# PyBuilder
-.pybuilder/
-target/
-
 .pdm-python
 .pdm-build/
 

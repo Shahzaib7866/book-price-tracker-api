@@ -3,6 +3,7 @@
 .git
 __pycache__/
 *.pyc
-venv/
 .vscode/
 README.md
+
+
